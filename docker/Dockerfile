@@ -1,11 +1,13 @@
-FROM oven/bun:latest as base
+FROM oven/bun:latest AS base
+
 WORKDIR /app
 
 COPY package.json .
 RUN bun install
 
-COPY src ./src
-COPY tsconfig.json .
+COPY . . 
+# COPY src ./src
+# COPY tsconfig.json .
 COPY .env.example  .env
 COPY .env.example  .env.prod
 
