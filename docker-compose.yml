@@ -3,7 +3,7 @@ version: "3.8"
 services:
   api:
     build:
-      context: ./api
+      context: ./bunpj
       dockerfile: ../docker/Dockerfile
     container_name: api-service
     image: caddy-gateway-api:latest
@@ -16,7 +16,7 @@ services:
       - "auth.realm=shopsthai.app"
       - "auth.clientid=shopsthai-api"
     env_file:
-      - ./api/.env
+      - ./bunpj/.env
     environment:
       - NODE_ENV=production
       - TZ=Asia/Bangkok
