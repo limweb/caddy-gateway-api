@@ -1,5 +1,8 @@
 FROM oven/bun:latest AS base
 
+ENV TZ=Asia/Bangkok
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 WORKDIR /app
 
 COPY package.json .
