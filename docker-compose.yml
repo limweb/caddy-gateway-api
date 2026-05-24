@@ -18,8 +18,9 @@ services:
       - ./.env
     volumes:
       - ./bunpj:/app
+      - /app/node_modules
 
 networks:
   default:
-    external:
-      name: proxy-network
+    name: proxy-network
+    external: true
