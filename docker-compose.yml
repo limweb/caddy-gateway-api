@@ -20,6 +20,8 @@ services:
     environment:
       - NODE_ENV=production
       - TZ=Asia/Bangkok
+    volumes:
+      - ./bunpj:/app
 
 networks:
   default:

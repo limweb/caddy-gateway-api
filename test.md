@@ -18,7 +18,7 @@ curl -X POST "https://sso.shopsthai.com/realms/shopsthai.app/protocol/openid-con
 }
 
 
-curl -H "Authorization: Bearer <YOUR_JWT_TOKEN>" http://api.shopsthai.com/me
+curl -H "Authorization: Bearer <YOUR_JWT_TOKEN>" https://api.shopsthai.com/me
 {
     "headers": {
         "host": "api.shopsthai.com",
@@ -48,7 +48,7 @@ curl -H "Authorization: Bearer <YOUR_JWT_TOKEN>" http://api.shopsthai.com/me
     }
 }
 
-curl -H "Authorization: Bearer <YOUR_JWT_TOKEN>" http://api.shopsthai.com/datas
+curl -H "Authorization: Bearer <YOUR_JWT_TOKEN>" https://api.shopsthai.com/datas
 {
     "datas": [{
         "id": 1,
